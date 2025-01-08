@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ffb3ff, #ff66cc);
+    color: #333;
+}
+  
+header{
+    text-align: center;
+    padding: 30px;
+    background: rgb(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px;
+}
+  
+header h1{
+    font-size: 2.5rem;
+    color: #ff66cc;
+}
+  
+header p{
+    font-size: 1.2rem;
+    color: #444;
+}
+  
+.science-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+  
+.science-card{
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 16px;
+    width: 280px;
+    height: 350px; 
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0, 0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+.science-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 20px rgb(0, 0, 0, 0.2);
+}
+  
+.science-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+  
+.science-card h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #ff66cc;
+}
+  
+.science-info{
+    display: none;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    background: rgb(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0px 6px 12px rgb(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+  
+.science-info img{
+    max-width: 100%;
+    max-height: 300px; 
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.science-info h2{
+    font-size: 2rem;
+    color: #ff66cc;
+    margin-bottom: 10px;
+}
+  
+.science-info p{
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+.science-info a{
+    margin-top: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    background: #ff32bb;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+  
+.science-info a:hover{
+    background: #ff66cc;
+}
+
+:target{
+    display: block;
+}

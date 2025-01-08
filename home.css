@@ -1,0 +1,94 @@
+body{
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #141E30, #243B55);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.4);
+  border-bottom: 2px solid #fff;
+}
+
+header p{
+  font-size: 1.2rem;
+  color: #dcdcdc;
+}
+
+.circle-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px 10%;
+  justify-items: center;
+}
+
+@media (max-width: 1024px){
+  .circle-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px){
+  .circle-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px){
+  .circle-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+.circle-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle-card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgb(0, 0, 0, 0.4);
+}
+
+.circle-card img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
+}
+
+.circle-card-content{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.circle-card-content h3{
+  font-size: 1.2rem;
+  color: #FFD700;
+}
+
+footer{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 15px;
+  margin-top: auto;
+  border-top: 2px solid #fff;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
